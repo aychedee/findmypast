@@ -19,3 +19,7 @@ def multiplied_primes_table(number_of_primes):
             table[x][y] = factor_x * factor_y
 
     return table
+
+
+def format_table(number_of_primes):
+    pass
