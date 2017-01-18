@@ -28,9 +28,9 @@ def test_display_table():
     table = multiplied_primes_table(3)
 
     expected_output = ('\n'
-                       '\t|    |  2 |  3 |  5 |\n'
-                       '\t|  2 |  4 |  6 | 10 |\n'
-                       '\t|  3 |  6 |  9 | 15 |\n'
-                       '\t|  5 | 10 | 15 | 25 |\n')
+                       '\t|      |    2 |    3 |    5 |\n'
+                       '\t|    2 |    4 |    6 |   10 |\n'
+                       '\t|    3 |    6 |    9 |   15 |\n'
+                       '\t|    5 |   10 |   15 |   25 |\n')
 
     assert format_table(table) == expected_output

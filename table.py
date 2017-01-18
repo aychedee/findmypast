@@ -13,7 +13,6 @@ def multiplied_primes_table(number_of_primes):
         table[i][0] = prime
         table[0][i] = prime
 
-    print table
     for x, factor_x in enumerate(primes, 1):
         for y, factor_y in enumerate(primes, 1):
             table[x][y] = factor_x * factor_y
@@ -23,13 +22,12 @@ def multiplied_primes_table(number_of_primes):
 
 def format_table(table):
     output = '\n'
-    print table
     for row in table:
         if row[0] is None:
-            output += '\t|    |'
+            output += '\t|      |'
         else:
             output += '\t|'
-        output += ''.join(['{: 3d} |'.format(r) if r else '' for r in row])
+        output += ''.join(['{: 5d} |'.format(r) if r else '' for r in row])
         output += '\n'
 
     return output
