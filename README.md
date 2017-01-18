@@ -35,7 +35,7 @@ Areas to improve
 
 The primes generator. I initially wrote it as a generator because I thought I
 could create a low memory sieve solution. Halfway through I realised that a
-sieve solution really needs to know it's endpoint to be useful. 
+sieve solution really needs to know its endpoint to be useful. 
 
 Also, if I didn't write it as a generator then I wouldn't have to guess how
 many primes I needed to generate in the table creating function... 
