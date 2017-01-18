@@ -44,3 +44,6 @@ For the output, I could make it change the number of spaces it used for padding
 automatically. 
 
 For the user input I could use something like argparse to tidy up some of that code.
+
+The prime generator could also be cached somehow between runs, maybe even storing
+primes on disk.

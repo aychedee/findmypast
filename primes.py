@@ -3,8 +3,7 @@ from collections import defaultdict
 
 def primes_generator(limit):
     primes = defaultdict(lambda: True)
-    primes[0] = False
-    primes[1] = False
+    primes[0], primes[1] = False, False
 
     for candidate in range(limit):
         if primes[candidate]:
