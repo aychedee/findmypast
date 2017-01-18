@@ -27,5 +27,4 @@ def test_primes_generator_is_performant():
     generated_primes = list(primes_generator(20000))
 
     assert len(generated_primes) > 2000
-    print time.time() - start
     assert time.time() - start < 0.1

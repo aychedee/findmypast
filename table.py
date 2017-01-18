@@ -21,5 +21,15 @@ def multiplied_primes_table(number_of_primes):
     return table
 
 
-def format_table(number_of_primes):
-    pass
+def format_table(table):
+    output = '\n'
+    print table
+    for row in table:
+        if row[0] is None:
+            output += '\t|    |'
+        else:
+            output += '\t|'
+        output += ''.join(['{: 3d} |'.format(r) if r else '' for r in row])
+        output += '\n'
+
+    return output

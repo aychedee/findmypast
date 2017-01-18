@@ -27,12 +27,10 @@ def test_multiplied_primes_table_with_five_primes():
 def test_display_table():
     table = multiplied_primes_table(3)
 
-    expected_output = (
-        '\n\t|   | 2 | 3 | 5 |'
-        '\t| 2 | 4 | 6 |10 |'
-        '\t| 3 | 6 | 9 |15 |'
-        '\t| 5 |10 |15 |25 |\n'
-    )
-
+    expected_output = ('\n'
+                       '\t|    |  2 |  3 |  5 |\n'
+                       '\t|  2 |  4 |  6 | 10 |\n'
+                       '\t|  3 |  6 |  9 | 15 |\n'
+                       '\t|  5 | 10 | 15 | 25 |\n')
 
     assert format_table(table) == expected_output
