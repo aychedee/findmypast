@@ -1,7 +1,9 @@
+from primes import primes_generator
 
 
 def multiplied_primes_table(number_of_primes):
-    primes = [2, 3, 5]
+    primes = list(primes_generator(number_of_primes*3))[:number_of_primes]
+
     table = [
         [None] * (number_of_primes + 1)
         for _ in range(number_of_primes + 1)
